@@ -4,16 +4,6 @@
 		<loc>/</loc>
 	</url>
 	<url>
-		<loc>/kristin-cabage/</loc>
-		<lastmod>2021-06-25T16:50:42+00:00</lastmod>
-		<image:image>
-			<image:loc>/wp-content/uploads/2017/08/kristin-cabbage.600x600.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>/wp-content/uploads/2017/08/kristin-cabbage.600x600.jpg</image:loc>
-		</image:image>
-	</url>
-	<url>
 		<loc>/jeff-marzolf/</loc>
 		<lastmod>2021-12-30T18:17:18+00:00</lastmod>
 		<image:image>
@@ -31,6 +21,26 @@
 		</image:image>
 		<image:image>
 			<image:loc>/wp-content/uploads/2021/06/brandi-shipwash_600x600.jpg</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>/sam-shelley/</loc>
+		<lastmod>2024-12-17T23:29:07+00:00</lastmod>
+		<image:image>
+			<image:loc>/wp-content/uploads/2024/12/sam-shelley_600x600.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>/wp-content/uploads/2024/12/sam-shelley_600x600.jpg</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>/jesse-giles/</loc>
+		<lastmod>2024-12-17T23:29:43+00:00</lastmod>
+		<image:image>
+			<image:loc>/wp-content/uploads/2024/12/jesse-giles_600x600.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>/wp-content/uploads/2024/12/jesse-giles_600x600.jpg</image:loc>
 		</image:image>
 	</url>
 </urlset>
