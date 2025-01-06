@@ -4,16 +4,6 @@
 		<loc>/</loc>
 	</url>
 	<url>
-		<loc>/jeff-marzolf/</loc>
-		<lastmod>2024-12-18T14:24:53+00:00</lastmod>
-		<image:image>
-			<image:loc>/wp-content/uploads/2017/08/jeff-marzolf.02.600x600.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>/wp-content/uploads/2017/08/jeff-marzolf.02.600x600.jpg</image:loc>
-		</image:image>
-	</url>
-	<url>
 		<loc>/brandi-shipwash/</loc>
 		<lastmod>2024-12-18T14:25:14+00:00</lastmod>
 		<image:image>
@@ -24,16 +14,6 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>/sam-shelley/</loc>
-		<lastmod>2024-12-18T14:27:25+00:00</lastmod>
-		<image:image>
-			<image:loc>/wp-content/uploads/2024/12/sam-shelley_600x600.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>/wp-content/uploads/2024/12/sam-shelley_600x600.jpg</image:loc>
-		</image:image>
-	</url>
-	<url>
 		<loc>/jesse-giles/</loc>
 		<lastmod>2024-12-18T14:27:38+00:00</lastmod>
 		<image:image>
@@ -41,6 +21,26 @@
 		</image:image>
 		<image:image>
 			<image:loc>/wp-content/uploads/2024/12/jesse-giles_600x600.jpg</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>/jeff-marzolf/</loc>
+		<lastmod>2025-01-03T17:04:35+00:00</lastmod>
+		<image:image>
+			<image:loc>/wp-content/uploads/2017/08/jeff-marzolf.02.600x600.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>/wp-content/uploads/2017/08/jeff-marzolf.02.600x600.jpg</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>/sam-shelley/</loc>
+		<lastmod>2025-01-03T17:08:43+00:00</lastmod>
+		<image:image>
+			<image:loc>/wp-content/uploads/2024/12/sam-shelley_600x600.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>/wp-content/uploads/2024/12/sam-shelley_600x600.jpg</image:loc>
 		</image:image>
 	</url>
 </urlset>
