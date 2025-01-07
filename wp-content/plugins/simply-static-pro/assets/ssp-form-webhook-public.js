@@ -62,8 +62,6 @@ if (null !== form_config_element) {
             .then(json => {
                 let settings = json.find(x => x.form_id === form_id);
 
-                console.log(settings);
-
                 if (settings) {
                     let data = new FormData(form);
                     submitForm(settings.form_webhook, settings, data);
@@ -172,14 +170,16 @@ if (null !== form_config_element) {
             });
 
             // Prevent Gravity Forms from submitting without submit event.
-            gform.utils.addAsyncFilter('gform/submission/pre_submission', async (data) => {
-                data.abort = true;
+            if (typeof gform != "undefined") {
+                gform.utils.addAsyncFilter('gform/submission/pre_submission', async (data) => {
+                    data.abort = true;
 
-                // Trigger submit event
-                form.dispatchEvent(new Event('submit'));
+                    // Trigger submit event
+                    form.dispatchEvent(new Event('submit'));
 
-                return data;
-            });
+                    return data;
+                });
+            }
 
             form.addEventListener("submit", function (el) {
                 el.preventDefault();
