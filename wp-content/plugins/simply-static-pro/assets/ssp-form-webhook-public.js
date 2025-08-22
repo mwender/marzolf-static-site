@@ -16,25 +16,30 @@ if (null !== form_config_element) {
 
         // Maybe add custom header.
         if (settings.form_custom_headers) {
-            // Split arguments by ,
-            let headersData = settings.form_custom_headers.split(',');
-            let headers = {};
+            // Parse if multiple headers are present.
+            if (settings.form_custom_headers.includes(',')) {
+                // Split arguments by ,
+                let headersData = settings.form_custom_headers.split(',');
+                let headers = {};
 
-            // Build the headers object.
-            headersData.forEach((header) => {
+                // Build the headers object.
+                headersData.forEach((header) => {
+                    // Split header by :
+                    let header_parts = header.split(':');
+                    // Add header to request
+                    headers[header_parts[0]] = header_parts[1];
+                });
+
+                // Pass the header to the request.
+                requestData.headers = headers;
+            } else {
                 // Split header by :
-                let header_parts = header.split(':');
+                let header_parts = settings.form_custom_headers.split(':');
                 // Add header to request
-                headers[header_parts[0]] = header_parts[1];
-            });
-
-            // Pass the header to the request.
-            requestData.headers = headers;
-        } else {
-            // Set default headers.
-            requestData.headers = {
-                'Accept': 'application/json',
-            };
+                requestData.headers = {
+                    [header_parts[0]]: header_parts[1]
+                };
+            }
         }
 
         // Send data via fetch to URL
@@ -75,7 +80,7 @@ if (null !== form_config_element) {
     function handleMessage(settings, error = false) {
         if (settings.form_use_redirect) {
             window.location.replace(settings.form_redirect_url);
-        } else {
+        } else if (!settings.form_disable_feedback) {
             // Set up success message.
             const message = document.createElement('div');
 
@@ -103,34 +108,86 @@ if (null !== form_config_element) {
 
             // Adjust the form output depending on the plugin.
             let spinner;
+            let submitButton;
 
             switch (settings.form_plugin) {
                 case 'cf7':
                     spinner = document.querySelector('.wpcf7-spinner');
+                    submitButton = form.querySelector('input[type="submit"]');
 
                     if (spinner) {
                         spinner.style.display = 'none';
+                    }
+
+                    if (submitButton) {
+                        submitButton.disabled = true;
                     }
                     break;
                 case 'elementor_forms':
                     spinner = document.querySelector('.elementor-message');
+                    submitButton = form.querySelector('button[type="submit"]');
 
                     if (spinner) {
                         spinner.style.display = 'none';
+                    }
+
+                    if (submitButton) {
+                        submitButton.disabled = true;
                     }
                     break;
                 case 'bricks_forms':
                     spinner = document.querySelector('.loading');
+                    submitButton = form.querySelector('button[type="submit"]');
 
                     if (spinner) {
                         spinner.style.display = 'none';
                     }
+
+                    if (submitButton) {
+                        submitButton.disabled = true;
+                    }
                     break;
                 case 'gravity_forms':
                     spinner = document.querySelector('.gform-loader');
+                    submitButton = form.querySelector('input[type="submit"]');
 
                     if (spinner) {
                         spinner.style.display = 'none';
+                    }
+
+                    if (submitButton) {
+                        submitButton.disabled = true;
+                    }
+                    break;
+                case 'wpforms':
+                    spinner = document.querySelector('.wpforms-submit-spinner');
+                    submitButton = form.querySelector('button[type="submit"]');
+
+                    if (spinner) {
+                        spinner.style.display = 'none';
+                    }
+
+                    if (submitButton) {
+                        submitButton.disabled = true;
+                    }
+                    break;
+                case 'wsf_form':
+                    submitButton = form.querySelector('button[type="submit"], input[type="submit"]');
+
+                    if (submitButton) {
+                        submitButton.disabled = true;
+                    }
+                    break;
+                case 'fluent_forms':
+                    spinner = document.querySelector('.ff-loading-bar');
+                    submitButton = form.querySelector('button[type="submit"]');
+
+                    if (spinner) {
+                        spinner.style.display = 'none';
+                    }
+
+                    if (submitButton) {
+                        submitButton.disabled = true;
                     }
                     break;
             }
