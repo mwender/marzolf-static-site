@@ -1,11 +1,21 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="/main-sitemap.xsl"?>
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="/wp-content/plugins/wordpress-seo/css/main-sitemap.xsl"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>/</loc>
 	</url>
 	<url>
-		<loc>/jeff-marzolf/</loc>
-		<lastmod>2025-08-22T17:59:39+00:00</lastmod>
+		<loc>/brandi-shipwash</loc>
+		<lastmod>2025-08-22T18:01:19+00:00</lastmod>
+		<image:image>
+			<image:loc>/wp-content/uploads/2025/08/staff_brandi-shipwash_800x1200.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>/wp-content/uploads/2021/06/brandi-shipwash_600x600.jpg</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>/jeff-marzolf</loc>
+		<lastmod>2026-03-31T19:54:30+00:00</lastmod>
 		<image:image>
 			<image:loc>/wp-content/uploads/2025/08/staff_jeff-marzolf_800x1200.jpg</image:loc>
 		</image:image>
@@ -14,18 +24,8 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>/jesse-giles/</loc>
-		<lastmod>2025-08-22T18:00:15+00:00</lastmod>
-		<image:image>
-			<image:loc>/wp-content/uploads/2025/08/staff_jesse-giles_800x1200.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>/wp-content/uploads/2025/08/staff_jesse-giles_800x1200.jpg</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc>/sam-shelley/</loc>
-		<lastmod>2025-08-22T18:00:47+00:00</lastmod>
+		<loc>/sam-shelley</loc>
+		<lastmod>2026-05-01T19:32:57+00:00</lastmod>
 		<image:image>
 			<image:loc>/wp-content/uploads/2025/08/staff_sam-shelley_800x1200.jpg</image:loc>
 		</image:image>
@@ -34,13 +34,13 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>/brandi-shipwash/</loc>
-		<lastmod>2025-08-22T18:01:19+00:00</lastmod>
+		<loc>/jesse-giles</loc>
+		<lastmod>2026-05-01T19:36:40+00:00</lastmod>
 		<image:image>
-			<image:loc>/wp-content/uploads/2025/08/staff_brandi-shipwash_800x1200.jpg</image:loc>
+			<image:loc>/wp-content/uploads/2025/08/staff_jesse-giles_800x1200.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>/wp-content/uploads/2021/06/brandi-shipwash_600x600.jpg</image:loc>
+			<image:loc>/wp-content/uploads/2025/08/staff_jesse-giles_800x1200.jpg</image:loc>
 		</image:image>
 	</url>
 </urlset>
